@@ -171,7 +171,6 @@ func tambahTransaksi(jenisKendaraan, PlatKendaraan string, jamMasuk, jamKeluar i
 	fmt.Print("ID Petugas: ")
 	fmt.Scan(&idPetugas)
 
-	// Memeriksa apakah ID petugas valid
 	indexPetugas := cariPetugas(idPetugas)
 	if indexPetugas == -1 {
 		fmt.Println("Petugas dengan ID tersebut tidak ditemukan.")
